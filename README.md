@@ -12,3 +12,7 @@ Usage:
   pcap2cshark (-h | --help)
   pcap2cshark --version
 ```
+
+## Requirements
+
+* libcurl3
