@@ -10,8 +10,14 @@ pub struct Config {
 }
 
 pub fn get_config(folder: PathBuf) -> Config {
-    let config_folder = folder.as_path()
-        .join(".config")
+    let mut config_folder = folder.as_path()
+        .join(".config");
+
+    if !config_folder.exists() {
+        fs::create_dir(&config_folder);
+    }
+    
+    config_folder = config_folder
         .join("pcap2cshark");
 
     if !config_folder.exists() {
