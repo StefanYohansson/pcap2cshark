@@ -1,6 +1,6 @@
 [package]
 name = "pcap2cshark"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["StefanYohansson <sy.fen0@gmail.com>"]
 
 [dependencies]
